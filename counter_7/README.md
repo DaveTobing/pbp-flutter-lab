@@ -1,16 +1,40 @@
-# counter_7
+## Tugas 7
 
-A new Flutter project.
+Reference 
+1. [Tambah button](https://www.fluttercampus.com/guide/19/how-to-add-multiple-floating-action-buttons-in-one-screen-flutter-app/)
+2. [Referensi alignment button](https://stackoverflow.com/questions/72152176/how-to-put-buttons-on-two-ends-of-screen-in-flutter)
+3. [Referensi change color](https://programmingwithswift.com/change-button-color-on-press-with-flutter/)
+4. [Referensi change color](https://www.flutterbeads.com/change-text-color-in-flutter/#:~:text=its%20color%20parameter.-,Steps,the%20color%20of%20your%20choice.)
+5. [Hide button](https://stackoverflow.com/questions/44489804/how-to-show-hide-widgets-programmatically-in-flutter)
 
-## Getting Started
+ # Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
+  
+  stateful widget -> tampilannya akan berubah saat terjadi sebuah action yang dibuat oleh user 
+  example : text yang akan ditampilkan akan disesuaikan dengan nilai counter
 
-This project is a starting point for a Flutter application.
+  stateless widget -> tampilan yang tidak dapat berubah 
+  example : increment button
 
-A few resources to get you started if this is your first Flutter project:
+ # Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ - Text -> menampikan text bertulisan "genap", "ganjil" dan counter 
+ - Icons -> menampilkan icon "+" dan "-" pada button
+ - Floatingactionbutton -> menampilkan button "+" dan "-" jika button "+"  ditekan maka counter akan bertambah 1 dan jika button "-" ditekan maka counter akan berkurang 1
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ # Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut.
+ setState() -> untuk memanggil framework bahwa value dari method yang dipanggil telah berubah
+
+ varibel yang terdapat di dalam setState akan terpengaruhi 
+
+ # Jelaskan perbedaan antara const dengan final.
+
+ const - > akan di initialized ketika compile - time  yang dimana variable akan di assign ketika run time
+
+ final -> akan di initialized ketika runtime yang dimana variable akan di assign sekali saja
+
+
+ # Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+ Pertama membuat method _decrementCounter() yang akan melakukan decrement setiap method tersebut dipanggil, Kemudian membuat method setText yang akan menyesuaikan _text dengan counter jika counter merupakan genap maka _text akan bertulisan genap dan _currentColorIndex akan bernilai 0 dan jika ganjil maka _text akan bertulisan ganjil _currentColorIndex akan bernilai 1
+
+ Kemudian membuat button remove yang jika button tersebut ditekan maka counter akan di decrement dan 
