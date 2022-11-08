@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _incrementCounter() {
     setState(() {
       _counter++;
-      _setText();
+      _changeText();
     });
   }
 
@@ -51,15 +51,15 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       if (_counter == 0) {
         _counter = 0;
-        _setText();
+        _changeText();
       } else {
         _counter--;
-        _setText();
+        _changeText();
       }
     });
   }
 
-  void _setText() {
+  void _changeText() {
     setState(() {
       if (_counter % 2 == 0) {
         _text = "GENAP";
