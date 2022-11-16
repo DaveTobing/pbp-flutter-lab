@@ -38,3 +38,32 @@ Reference
  Pertama membuat method _decrementCounter() yang akan melakukan decrement setiap method tersebut dipanggil, Kemudian membuat method setText yang akan menyesuaikan _text dengan counter jika counter merupakan genap maka _text akan bertulisan genap dan _currentColorIndex akan bernilai 0 dan jika ganjil maka _text akan bertulisan ganjil _currentColorIndex akan bernilai 1
 
  Kemudian membuat button remove yang jika button tersebut ditekan maka counter akan di decrement dan 
+
+
+ ## Tugas 8
+
+ Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+    Navigator.push -> Metode push digunakan untuk menambahkan rute lain ke atas tumpukan screen (stack) saat ini. Halaman baru ditampilkan di atas halaman sebelumnya.
+    Navigator.pushReplacement -> 
+
+
+ Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+    Text -> menampilkan text
+    Container -> sebagai tempat untuk mengampung dropdown menu 
+    Row -> 
+
+
+ Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+
+
+
+ Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+
+
+
+
+ Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+        1 membuat drawer yang berguna sebagai navigator antar halaman pada app
+        2 membuat  file bernama form dan sebuah form yang untuk menginput data - data yang diperlukan pada halaman tambah budget dengan data yang diperlukan input judul, nominal dan jenis input pada dropdown menu
+        3 membuat file bernama data yang menampilkan isi - isi dari data yang telah diinput 
+
