@@ -43,11 +43,9 @@ class _MyFormPageState extends State<MyFormPage> {
       drawer: Drawer(
         child: Column(
           children: [
-            // Menambahkan clickable menu
             ListTile(
               title: const Text('counter_7'),
               onTap: () {
-                // Route menu ke halaman utama
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => const MyHomePage(title: "Counter",)),
@@ -57,7 +55,6 @@ class _MyFormPageState extends State<MyFormPage> {
             ListTile(
               title: const Text('Tambah Budget'),
               onTap: () {
-                // Route menu ke halaman form
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const MyFormPage()),
@@ -67,7 +64,6 @@ class _MyFormPageState extends State<MyFormPage> {
             ListTile(
               title: const Text('Data Budget'),
               onTap: () {
-                // Route menu ke halaman data
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => const MyDataPage()),
@@ -91,18 +87,15 @@ class _MyFormPageState extends State<MyFormPage> {
                                 decoration: InputDecoration(
                                     hintText: "Contoh : Beli Aqua",
                                     labelText: "Judul",
-                                    // Menambahkan circular border agar lebih rapi
                                     border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(5.0),
                                     ),
                                 ),
-                                // Menambahkan behavior saat nama diketik 
                                 onChanged: (String? value) {
                                     setState(() {
                                         _judul = value!;
                                     });
                                 },
-                                // Menambahkan behavior saat data disimpan
                                 onSaved: (String? value) {
                                     setState(() {
                                         _judul = value!;
@@ -124,12 +117,10 @@ class _MyFormPageState extends State<MyFormPage> {
                                 decoration: InputDecoration(
                                     hintText: "Contoh : 5000",
                                     labelText: "Nominal",
-                                    // Menambahkan circular border agar lebih rapi
                                     border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(5.0),
                                     ),
                                 ),
-                                // Menambahkan behavior saat nama diketik 
                                 onChanged: (String? value) {
                                     setState(() {
                                         if (_isNumeric(value)) {
@@ -137,7 +128,6 @@ class _MyFormPageState extends State<MyFormPage> {
                                         }
                                     });
                                 },
-                                // Menambahkan behavior saat data disimpan
                                 onSaved: (String? value) {
                                     setState(() {
                                         if (_isNumeric(value)) {
@@ -145,7 +135,6 @@ class _MyFormPageState extends State<MyFormPage> {
                                       }
                                     });
                                 },
-                                // Validator sebagai validasi form
                                 validator: (String? value) {
                                     if (value == null || value.isEmpty) {
                                         return 'Nominal harus berupa angka';
