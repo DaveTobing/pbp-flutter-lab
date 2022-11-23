@@ -42,7 +42,6 @@ Reference
 
  # Tugas 8: Flutter Form
 
-
  ## Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
     Navigator.push -> Metode Navigator.push digunakan untuk menambahkan rute lain ke atas tumpukan screen (stack) saat ini. Halaman baru ditampilkan di atas halaman sebelumnya.
     Navigator.pushReplacement -> Metode Navigator.pushReplacement sama seperti Navigator.push tetapi bedanya Navigator.pushReplacement akan membuang route sebelumnya
@@ -51,7 +50,7 @@ Reference
  ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
     - Form ->  menghimpun elemen-elemen pada halaman input budget. 
     - Text -> menampilkan text
-    - Container -> sebagai tempat untuk mengampung dropdown menu 
+    - Container -> sebagai tempat untuk menampung dropdown menu 
     - Card -> menampilkan informasi budget dalam bentuk kotak baru
     - Textbutton -> menambahkan button submisi budget
     - DropdownButtonFormField -> untuk menampilkan menu dropdown berisi tipe budget
@@ -77,3 +76,27 @@ Reference
         2 membuat  file bernama form dan sebuah form yang untuk menginput data - data yang diperlukan pada halaman tambah budget dengan data yang diperlukan input judul, nominal dan jenis input pada dropdown menu. Dan membuat class Budget yang berisi atribut - atribut yang diperlukan dalam input data 
         3 membuat file bernama data yang menampilkan isi - isi dari data yang telah diinput dengan cara membuat Listview untuk menampilkan setiap elemen pada List data budget dengan setiap data ditampilkan dalam bentuk cards
 
+
+  # Tugas 9: Flutter Form
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+      - Drawer -> navigasi antar halaman
+      - Text -> menampilkan text
+      - Container -> sebagai tempat untuk menampung dropdown menu 
+
+
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+
+
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+    - membuat models watchlist pada folder model
+    - membuat halaman watchlist yang akan menampilkan semua isi dari file json dengan menampilkan title watchlist
+    - membuat halaman watchlist detail untuk menampilkan detail dari watchlist tersebut ketika ditekan dengan menambah button back
+    - membuat 
