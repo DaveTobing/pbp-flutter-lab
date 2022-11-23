@@ -81,22 +81,26 @@ Reference
 
 ## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
 
+ Bisa, tetapi akan lebih buruk tanpa membuat model. karena jika terdapat model maka penyimpanan data akan lebih terstruktur sehingga pengambilan data yang sudah disimpan akan lebih mudah. Intinya, jika buat model dulu akan lebih mudah penyimpanan dan pengaksesan datanya.
 
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
       - Drawer -> navigasi antar halaman
       - Text -> menampilkan text
-      - Container -> sebagai tempat untuk menampung dropdown menu 
-
+      - Row, Container -> sebagai tempat untuk menampung dropdown menu 
+      - CircularProgressIndicator: Widget berupa indikator lingkaran yang berputar.Untuk menandakan aplikasinya sedang bekerja (Dalam konteks ini menandakan data belum berhasil diambil)
 
 
 ## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
-
-
+    - Menambahkan dependency http ke proyek
+    - Membuat model sesuai dengan respons dari data yang berasal dari web service yang digunakan
+    - Membuat http request ke web service menggunakan dependency http
+    - Lakukan pengambilan data dari url yang diiginkan menggunakan metode http.get.
+    - Data dalam bentuk JSON ini ubah ke dalam bentuk model yang sudah dibuat
+    - Menampilkan data yang telah dikonversi ke aplikasi dengan FutureBuilder
 
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
     - membuat models watchlist pada folder model
     - membuat halaman watchlist yang akan menampilkan semua isi dari file json dengan menampilkan title watchlist
     - membuat halaman watchlist detail untuk menampilkan detail dari watchlist tersebut ketika ditekan dengan menambah button back
-    - membuat 
